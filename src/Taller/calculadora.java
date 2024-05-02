@@ -10,6 +10,7 @@ package Taller;
  */
 public class calculadora extends javax.swing.JFrame {
 
+    private boolean mostrandoResultado = false;
     public float primerNumero;
     public float segundoNumero;
     public String operador;
@@ -305,43 +306,93 @@ public class calculadora extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
-        this.casilla.setText(this.casilla.getText()+"0");
+        if (mostrandoResultado) {
+        casilla.setText("0");
+        mostrandoResultado = false;
+        } else {
+        casilla.setText(casilla.getText() + "0");
+        }
     }//GEN-LAST:event_jButton17ActionPerformed
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
-        this.casilla.setText(this.casilla.getText()+"1");
+        if (mostrandoResultado) {
+        casilla.setText("1");
+        mostrandoResultado = false;
+        } else {
+        casilla.setText(casilla.getText() + "1");
+        }
     }//GEN-LAST:event_jButton13ActionPerformed
 
     private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
-      this.casilla.setText(this.casilla.getText()+"2");
+        if (mostrandoResultado) {
+        casilla.setText("2");
+        mostrandoResultado = false;
+        } else {
+        casilla.setText(casilla.getText() + "2");
+        }
     }//GEN-LAST:event_jButton14ActionPerformed
 
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
-        this.casilla.setText(this.casilla.getText()+"3");
+        if (mostrandoResultado) {
+        casilla.setText("3");
+        mostrandoResultado = false;
+        } else {
+        casilla.setText(casilla.getText() + "3");
+        }
     }//GEN-LAST:event_jButton15ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-       this.casilla.setText(this.casilla.getText()+"4");
+       if (mostrandoResultado) {
+        casilla.setText("4");
+        mostrandoResultado = false;
+        } else {
+        casilla.setText(casilla.getText() + "4");
+        }
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
-       this.casilla.setText(this.casilla.getText()+"5");
+       if (mostrandoResultado) {
+        casilla.setText("5");
+        mostrandoResultado = false;
+        } else {
+        casilla.setText(casilla.getText() + "5");
+        }
     }//GEN-LAST:event_jButton10ActionPerformed
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
-       this.casilla.setText(this.casilla.getText()+"6");
+       if (mostrandoResultado) {
+        casilla.setText("6");
+        mostrandoResultado = false;
+        } else {
+        casilla.setText(casilla.getText() + "6");
+        }
     }//GEN-LAST:event_jButton11ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        this.casilla.setText(this.casilla.getText()+"7");
+        if (mostrandoResultado) {
+        casilla.setText("7");
+        mostrandoResultado = false;
+        } else {
+        casilla.setText(casilla.getText() + "7");
+        }
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-       this.casilla.setText(this.casilla.getText()+"8");
+       if (mostrandoResultado) {
+        casilla.setText("8");
+        mostrandoResultado = false;
+        } else {
+        casilla.setText(casilla.getText() + "8");
+        }
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        this.casilla.setText(this.casilla.getText()+"9");
+        if (mostrandoResultado) {
+        casilla.setText("9");
+        mostrandoResultado = false;
+        } else {
+        casilla.setText(casilla.getText() + "9");
+        }
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
@@ -386,6 +437,7 @@ public class calculadora extends javax.swing.JFrame {
             
             case "*": this.casilla.setText(entero(this.primerNumero * this.segundoNumero)); break;
         }
+         mostrandoResultado = true;
     }//GEN-LAST:event_jButton16ActionPerformed
 
     public String entero(float resultado){
